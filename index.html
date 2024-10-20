@@ -15,7 +15,8 @@
 
 
 
-<div class="nav-container">
+
+<div class="nav-container container">
     <div class=" flex nav-bar">
             <h2> <a href="#"> #JANEVA 2024</a></h4>
         <nav >
@@ -45,7 +46,6 @@
          </nav>
     </div>
 </div>
-
 <!-- Navbar End -->
 <!-- Slider Starts 
 <div class="slider">
@@ -323,7 +323,7 @@
 
 <!-- RSVP Start -->
 <div class="container mg-10 pd flex jc-center " id="rsvp">
-    <div class="pd  px-5  foot">
+    <div class="pd  px-5  ">
         <div class="jc-center flex flex-col mg-top-30">
             <h6 class="text-uppercase text-primary mb-3 jc-center flex">RSVP</h6>
             <h1 class="flex jc-center special-font display-font">Attend Our Wedding</h1>
@@ -331,28 +331,25 @@
         </div>
         <div class="jc-center row bg-light shadow p-3 p-4">
             <div class="text-center">
-                <form action="">
+                <form method="post" action="" name="contact-form">
                     <div class="form-row">
                         <div class="group-form col-sm-6">
-                            <input type="text" class="form-control p-4 p-3 border-0" placeholder="Your Name">
+                            <input type="text" class="form-control p-4 p-3 border-0" placeholder="Your Name" name="name">
                         </div>
                         <div class="group-form col-sm-6">
-                            <input type="text" class="form-control p-4 p-3 border-0" placeholder="Your email">
+                            <input type="text" class="form-control p-4 p-3 border-0" placeholder="Your email" name="email">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="group-form col-sm-6">
-                            <select class="form-control border-0"
+                            <select class="form-control border-0" name="guest"
                             style="height: 52px">
                                 <option>Number of Guest</option>
                                 <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
                             </select>
                         </div>
                         <div class="group-form col-sm-6">
-                            <select class="form-control border-0"
+                            <select class="form-control border-0" name="attending"
                             style="height: 52px">
                                 <option>I'm Attending</option>
                                 <option>All Event</option>
@@ -362,10 +359,10 @@
                         </div>
                     </div>
                     <div class="form-message">
-                        <textarea class="form-control border-0 px-3 py-2" rows="5" placeholder="Message" required="required"></textarea>
+                        <textarea class="form-control border-0 px-3 py-2" rows="5" placeholder="Message" name="message"    required="required"></textarea>
                     </div>
                     <div>
-                        <button class="btn btn-submit font-bold p-4 px-5">Submit</button>
+                        <button class="btn btn-submit font-bold p-4 px-5" value="submit" id="Submit">Submit</button>
                     </div>
                 </form>
             </div>
@@ -376,7 +373,7 @@
 <!-- RSVP end -->
 
 <!-- Footer Start -->
-<footer class="footer-container flex pd jc-center " id="contact">
+<footer class="footer-container" id="contact">
   <div class="jc-center flex flex-col">
     <div class="jc-center flex flex-col mg-top-30">
         <h1 class="flex jc-center special-font display-font">Thank You</h1>
@@ -412,8 +409,9 @@
     </div>
 
 </footer>
-<!-- Footer end -->
+<!--Footer end -->
 
   <script src="./js/script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
