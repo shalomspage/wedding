@@ -740,6 +740,16 @@ textarea.form-control {
   background-color: var(--primary);
   border-color: var(--primary);
 }
+.success {
+  display: none;
+  margin: 20px;
+  font-weight: bold;
+  color: var(--green);
+  padding: 8px;
+  background-color: var(--bisque);
+  border-radius: 4px;
+  border-color: var(--teal);
+}
 
 /* Footer section */
 .footer-container {

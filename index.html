@@ -128,7 +128,7 @@
                  
                  <img src="./img/woman-1867720_640.jpg" alt="" class=" pb-4">
                  <br>
-                 <h4 class="mb-2 ">Janell Abuh</h4>
+                 <h4 class="mb-2 ">Janell Mohammed</h4>
                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                  <div class="">
                     <a href="" class="btn btn-outline-primary btn-squqre mr-1">
@@ -331,7 +331,7 @@
         </div>
         <div class="jc-center row bg-light shadow p-3 p-4">
             <div class="text-center">
-                <form method="post" action="" name="contact-form">
+                <form id="form"   method="POST" action="" >
                     <div class="form-row">
                         <div class="group-form col-sm-6">
                             <input type="text" class="form-control p-4 p-3 border-0" placeholder="Your Name" name="name">
@@ -362,9 +362,10 @@
                         <textarea class="form-control border-0 px-3 py-2" rows="5" placeholder="Message" name="message"    required="required"></textarea>
                     </div>
                     <div>
-                        <button class="btn btn-submit font-bold p-4 px-5" value="submit" id="Submit">Submit</button>
+                        <button class="btn btn-submit font-bold p-4 px-5" value="submit" id="submit-button">Submit</button>
                     </div>
                 </form>
+                <div class="success" id="message"></div>
             </div>
             
         </div>
@@ -412,6 +413,5 @@
 <!--Footer end -->
 
   <script src="./js/script.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
