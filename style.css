@@ -310,6 +310,9 @@ p {
 .bg-bisque {
   background-color: var(--bisque);
 }
+.space {
+  letter-spacing: 0.5rem;
+}
 
 /* Nav-bar */
 
@@ -388,69 +391,33 @@ nav ul {
   width: 30vw;
 }
 /* slide section */
-.slider {
-  width: 1800px;
-  max-width: 100vw;
-  height: 600px;
-  margin: auto;
+.hero {
   position: relative;
-  overflow: hidden;
-}
-.slider .list {
-  position: absolute;
-  width: max-content;
-  height: 100%;
-  left: 0;
-  top: 0;
-  display: flex;
-  transition: 1s;
-}
-.slider .list img {
-  width: 1800px;
-  max-width: 100vw;
-  height: 100%;
-  object-fit: cover;
-}
-.slider .buttons {
-  position: absolute;
-  top: 45%;
-  left: 5%;
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-}
-.slider .buttons button {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #fff5;
-  color: var(--white);
-  border: none;
-  font-family: monospace;
-  font-weight: bold;
-}
-.slider .dots {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  color: var(--white);
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
 }
-.slider .dots li {
-  list-style: none;
-  width: 10px;
-  height: 10px;
-  background-color: var(--white);
-  margin: 10px;
-  border-radius: 20px;
-  transition: 0.5s;
+.hero-content {
+  z-index: 100;
+  color: var(--white);
+  text-align: center;
+  background-color: var(--shadow);
+  padding: 0 8rem;
 }
-.slider .dots li.active {
-  width: 30px;
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-background img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 /* Countdown section */
 .danger {
@@ -898,6 +865,9 @@ textarea.form-control {
 @media screen and (max-width: 784px) {
   .nav-container {
     padding: 10px 30px;
+  }
+  .hero-content {
+    padding: 0 1rem;
   }
   .time div span {
     padding: 0 20px;
