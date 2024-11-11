@@ -84,7 +84,6 @@ h4,
 }
 img {
   vertical-align: middle;
-  border-style: none;
 }
 p {
   font-size: 12px;
@@ -135,6 +134,9 @@ p {
 }
 .flex-col {
   flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
 }
 .al-sf {
   align-self: center;
@@ -388,7 +390,7 @@ nav ul {
 }
 .img-m {
   height: auto;
-  width: 30vw;
+  width: 100%;
 }
 /* slide section */
 .hero {
@@ -455,9 +457,9 @@ span {
   align-items: center;
 }
 
-.about-con div img {
-  width: 100%;
-}
+/* .about-con div img {
+  width: 50%;
+} */
 
 .btn:not(:disabled):not(.disabled) {
   cursor: pointer;
@@ -481,6 +483,7 @@ span {
   width: 100%;
 }
 
+
 /* Story section */
 .section-title {
   margin-bottom: 30px;
@@ -494,7 +497,20 @@ span {
 .about-con {
   margin: 30px;
   padding: 1rem;
+  width: 50%;
 }
+.img-card{
+  width: 100%;
+}
+.p-t{
+  /* width: 40vw; */
+  height: auto;
+}
+
+/* .img-story img{
+  width: 40%;
+  height: auto;
+} */
 
 /* Gallery section */
 
@@ -516,6 +532,8 @@ span {
   width: 80px;
   border-radius: 0.75rem;
   background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
   cursor: pointer;
   overflow: hidden;
   border-radius: 2rem;
@@ -537,6 +555,7 @@ span {
   color: white;
   border-radius: 50%;
   width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -579,16 +598,19 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-  background-image: url("./img/img1.jpg");
+  background-image: url("./img/slide/img1.jpg");
 }
 .card[for="c2"] {
-  background-image: url("./img/img2.jpg");
+  background-image: url("./img/slide/8.jpg");
 }
 .card[for="c3"] {
-  background-image: url("./img/img3.jpg");
+  background-image: url("./img/slide/4.jpg");
 }
 .card[for="c4"] {
-  background-image: url("./img/img4.jpg");
+  background-image: url("./img/slide/5.jpg");
+}
+.card[for="c5"] {
+  background-image: url("./img/slide/6.jpg");
 }
 
 /* Event section */
@@ -893,6 +915,9 @@ textarea.form-control {
   .wrapper {
     width: 100%;
   }
+  .about-con {
+    width: 95%;
+}
 }
 
 @media screen and (max-width: 640px) {
